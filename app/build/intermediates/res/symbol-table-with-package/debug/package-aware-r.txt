@@ -669,6 +669,8 @@ id barrier
 id beginning
 id blocking
 id bottom
+id button
+id button2
 id buttonPanel
 id center
 id center_horizontal
@@ -852,9 +854,12 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string app_name
 string search_menu_title
+string startButton
 string status_bar_notification_info_overflow
+string stopButon
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

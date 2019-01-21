@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.kinotech.phona"
         minSdkVersion 26
@@ -17,6 +17,7 @@ android {
         }
     }
     buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -26,4 +27,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    implementation (group: 'org.apache.httpcomponents' , name: 'httpmime' , version: '4.3.5') {
+     exclude module: 'org.apache.httpcomponents:httpclient'}
 }
